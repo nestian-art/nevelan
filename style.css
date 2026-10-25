@@ -1,0 +1,166 @@
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.04);
+    }
+    
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+
+}
+
+
+* {
+    margin: 0%;
+}
+
+
+ul {
+    display: flex;
+    background-color: white;
+    padding: 15px 30px;
+    gap: 12px;
+    position: fixed;
+    left: 50%;
+    top: 28px;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.182);
+    z-index: 999;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+ul li {
+    list-style: none;
+    
+}
+
+ul li a {
+    align-self: center;
+    padding: 8px 12px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    
+}
+
+ul li a:hover {
+    transition: .4s;
+    box-shadow: inset 4px 4px 14px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 12px;
+}
+
+.page-1 {
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+}
+
+.page-1 img {
+    display: block;
+    margin: 0 auto;
+    width: 512px;
+    height: 512px;   
+}
+
+.page-1 p {
+    max-width: 70%;
+    overflow-wrap: break-word;
+    margin-top: -98px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 26px;
+}
+
+
+.page-2 {
+    background-color: white;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.page-2 h1 {
+    text-align: center;
+    padding-top: 22vh;
+    padding-bottom: 48px;
+    font-size: 45px;
+}
+
+.page-2 p {
+    max-width: 70%;
+    overflow-wrap: break-word;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+}
+
+.page-3 {
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.page-3 h1 {
+    text-align: center;
+    padding-top: 22vh;
+    padding-bottom: 4px;
+    padding-left: 44px;
+    font-size: 45px;
+}
+
+.page-3 .tutorial-video {
+    padding-top: 124px;
+    padding-left: 44px;
+    display: flex;
+}
+
+.page-3 p {
+    font-size: 21px;
+    padding-left: 44px;
+}
+
+.page-4 {
+    background-color: white;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.page-4 h1 {
+    text-align: center;
+    padding-top: 35vh;
+    padding-bottom: 48px;
+    font-size: 45px;
+}
+
+.page-4 .tombol {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+.page-4 p {
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 34px;
+}
+
+.page-4 a {
+    padding: 12px 54px;
+    background-color: rgb(80, 255, 80);
+    border-radius: 12px;
+    outline: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.page-4 #discord {
+    background-color: rgb(153, 153, 255);
+}
