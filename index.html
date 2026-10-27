@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
     <meta property="og:title" content="Nevelan Server Modpack" />
     <meta property="og:description" content="Minecraft server dengan modpack fantasy dengan pemasangan seperti resource pack otomatis." />
     <meta property="og:image" content="https://nevelan.asia/og-img.png" />
@@ -13,20 +14,21 @@
     <title>Nevelan</title>
 </head>
 <body>
-        
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="index.html">tutorial</a></li>
-        <li><a href="index.html">donation</a></li>
-        <li><a href="index.html">server status</a></li>
-    </ul>
-    <div class="page-1">
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#tutorial">tutorial</a></li>
+            <li><a href="#komunitas">komunitas</a></li>
+            <li><a href="index.html">server status</a></li>
+        </ul>
+    </div>
+    <div id="home">
         <img src="logo.png">
         <p>Selamat datang di website resmi Nevelan Fantasy.
             server Minecraft dengan modpack seru yang berisi petualangan!
         </p>
     </div>
-    <div class="page-2">
+    <div id="tutorial">
         <h1>Cara Masuk Server</h1>
         <p>1. Install forge 1.20.1 modloader terbaru</p>
         <p>2. Pasang mod Auto Modpack 5.0.0 RC-2</p>
@@ -39,20 +41,21 @@
         <p>9. Lalu klik download</p>
         <p>10. Setelah selesai download, klik tombol "Yes, close the game"</p>
         <p>11. Lalu jalankan Minecraft kalian lagi dan masuk ke server Nevelan</p>
+        <div class="AutoModpack">
+            <a href="https://cdn.modrinth.com/data/k68glP2e/versions/bBBmWoC3/automodpack-5.0.0-rc.2.jar?mr_download_reason=standalone">Auto Modpack Download</a>
+        </div>
     </div>
-    <div class="page-3">
-        <div class="tutorial-video">
+    <div id="tutorial-video">
         <a href="https://www.tiktok.com/@nevelan.mc/video/7700098549924531463?is_from_webapp=1&amp;sender_device=pc&amp;web_id=7678742761961948673" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit;width:100%;max-width:460px;background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #dedede;box-shadow:0 1px 4px rgba(0,0,0,0.1);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"><div style="width:100%;aspect-ratio:16 / 9;background:rgba(0,0,0,0.05);overflow:hidden"><img src="https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMxAYAviawbu1l3uQIAeICAMitI4ikCdB3vhPc~tplv-tiktokx-origin.image?dr=9636&amp;x-expires=1793073600&amp;x-signature=v9Y3MjuDZNSxLMqx7vVN5wWpKew%3D&amp;t=4d5b0474&amp;ps=13740610&amp;shp=81f88b70&amp;shcp=43f4a2f9&amp;idc=useast5" alt="" onerror="this.onerror=null;this.src='https://www.tiktok.com/favicon.ico';this.style.objectFit='contain';this.style.padding='15%'" style="width:100%;height:100%;object-fit:cover;display:block" /></div><div style="padding:14px 16px;display:flex;flex-direction:column;gap:6px"><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-height:15px"><img src="https://www.tiktok.com/favicon.ico" alt="" style="width:15px;height:15px;border-radius:4px;flex-shrink:0" /><span style="font-size:11px;font-weight:400;color:#999999;letter-spacing:0.5px;text-transform:uppercase">TikTok</span></div><div style="font-size:16px;font-weight:400;color:#000000;line-height:1.4;margin:0">Server Minecraft — Nevelan (@nevelan.mc) on TikTok</div><div style="font-size:13px;color:#000000;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:0">Tutorial pasang mod server otomatis untuk server Minecraft Nevelan #minecraft</div></div></a>
-        <div class="text">
+        <div id="text">
         <h1>Cara Masuk Server</h1>
         <p>Tutorial Video tiktok</p>
-        </div>
-        </div>
     </div>
-    <div class="page-4">
+    </div>
+    <div id="komunitas">
         <h1>Link Komunitas</h1>
         <p>Pingin cari teman satu server dan ngobrol bareng secara out game?</p>
-        <div class="tombol">
+        <div id="tombol">
             <a id="whatsapp" href="https://wa.nevelan.asia">WhatsApp</a>
             <a id="discord" href="https://dc.nevelan.asia">Discord</a>
         </div>
