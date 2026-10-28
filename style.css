@@ -23,15 +23,16 @@
 ul {
     display: flex;
     background-color: white;
-    padding: 5vh 7vw;
-    gap: 12px;
+    padding: clamp(12px, 2vw, 7px) clamp(8px, 2vw, 9px);
+    max-width: calc(100vw - 20px);
+    gap: clamp(2px, 1vw, 12px);
     position: fixed;
     left: 50%;
     top: 28px;
     transform: translateX(-50%);
     border-radius: 12px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.182);
-    z-index: 999;
+    z-index: 9999;
     opacity: 1;
     animation: pulse 2s ease-in-out infinite;;
     transition: opacity 0.5s ease-in-out;
@@ -54,6 +55,7 @@ ul li a {
     padding: 8px 12px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: (10px, 1.2vw, 16px);
     text-decoration: none;
     
 }
@@ -66,7 +68,7 @@ ul li a:hover {
 
 #home img {
     display: block;
-    margin: 0 auto;
+    margin: 140px auto;
     width: 46vw;
     height: auto;
 }
@@ -84,16 +86,16 @@ ul li a:hover {
 #home p {
     max-width: 70%;
     overflow-wrap: break-word;
-    margin-top: -167px;
     margin-left: 50%;
     transform: translateX(-50%);
     text-align: center;
     font-size: 26px;
+    margin-top: -122px;
 }
 
 
 #tutorial {
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 #tutorial h1 {
