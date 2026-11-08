@@ -1,12 +1,34 @@
-let navbar = document.querySelector(".navbar")
-let lastScrollY = window.scrollY;
+const home = document.querySelector("#home");
+const navbar = document.querySelector("ul");
 
-window.addEventListener("wheel", (event) => {
-    let currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY) {
-        navbar.classList.add("hide");
-    } else {
-        navbar.classList.remove("hide");
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navbar.classList.remove("scrolled");
+        } else {
+            navbar.classList.add("scrolled");
+        }
+    });
+}, {
+    threshold: 0
+});
+
+observer.observe(home);
+
+
+const slides = document.querySelector(".slides");
+const images = slides.querySelectorAll("img");
+
+let index = 0;
+
+function nextSlide() {
+    index++;
+
+    if (index >= images.length) {
+        index = 0;
     }
-    lastScrollY = currentScrollY;
-})
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(nextSlide, 4000);
